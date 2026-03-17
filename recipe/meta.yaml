@@ -1,5 +1,5 @@
 {% set name = "pytest-randomly" %}
-{% set version = "3.15.0" %}
+{% set version = "4.0.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b908529648667ba5e54723088edd6f82252f540cc340d748d1fa985539687047
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 521c216e94e8b40cccfa5da5e403e9c45a3071db6f9f1cb2d5658e9017def2a9
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - importlib-metadata >=3.6.0
+    - importlib-metadata >=3.6
     - pytest 
 
 test:
