@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools >=77
+    - uv-build >=0.12.1,<0.13 
   run:
     - python >={{ python_min }}
     - pytest >=8
