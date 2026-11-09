@@ -1,5 +1,5 @@
 {% set name = "pytest-randomly" %}
-{% set version = "5.0.0" %}
+{% set version = "5.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e9c575a5873ef168ddbe340ed9e97ce9edb4492ccc821e4b2ac6bb1f0ed515d2 
+  sha256: cdf8af20419969d273b97c8e7c8d688200807e815bdc733cf2a6af183080ad58
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - uv-build >=0.12.1,<0.13 
+    - uv-build >=0.12.1,<0.13
   run:
     - python >={{ python_min }}
     - pytest >=8
